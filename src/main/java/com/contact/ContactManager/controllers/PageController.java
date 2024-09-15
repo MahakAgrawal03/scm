@@ -23,7 +23,8 @@ public class PageController {
     
     @Autowired
     private UserService userService;
-
+    
+    
     
     @RequestMapping("/home")
     public String home(Model model){
@@ -104,7 +105,7 @@ public class PageController {
     user.setPassword(userForm.getPassword());
     user.setAbout(userForm.getAbout());
     user.setPhoneNumber(userForm.getPhoneNumber());
-    user.setEnabled(false);
+    user.setEnabled(true);
     user.setProfilePic( " ");
 
     User savedUser = userService.saveUser(user);
