@@ -1,0 +1,8 @@
+/* ./src/main/resouces/static/css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i src/main/resources/static/css/input.css -o src/main/resources/static/css/output.css --watch
+this  command is use to build our file ,if any change happen in html or js file then build automatically trigger */
